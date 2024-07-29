@@ -15,4 +15,14 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
+  document: {
+    newDocumentOptions: (prev, { currentUser, creationContext }) => {
+      const { type, schemaType } = creationContext;
+      if (type === 'structure' && schemaType == 'schedule') {
+        return [];
+      }
+      return prev;
+    },
+  },
 })
