@@ -10,6 +10,7 @@ import { crossfitScheduleType } from './crossfitScheduleType'
 import { weightliftingScheduleType } from './weightliftingScheduleType'
 import { classType } from './classType'
 import { coachesType } from './coachesType'
+import { contactType } from './contactType'
 
 export const schemaTypes = [
   // postType,
@@ -24,5 +25,6 @@ export const schemaTypes = [
   crossfitScheduleType,
   weightliftingScheduleType,
   coachesType,
+  contactType
 ]
 
