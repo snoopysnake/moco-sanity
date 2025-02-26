@@ -16,6 +16,11 @@ export const coachesType = defineType({
       title: 'Headshot',
     }),
     defineField({
+      name: 'thumbnail',
+      type: 'image',
+      title: 'Thumbnail',
+    }),
+    defineField({
       name: 'bio',
       type: 'text',
       title: 'Bio',
@@ -32,9 +37,12 @@ export const coachesType = defineType({
       ],
     }),
     defineField({
-      name: 'thumbnail',
-      type: 'image',
-      title: 'Thumbnail',
+      name: 'headCoach',
+      type: 'boolean',
+      title: 'Head Coach?'
     }),
   ],
+  initialValue: {
+    headCoach: false
+  }
 })
